@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      ul {
+        list-style: none;
+        /* hindrer den i � vise �[1], �[2], �[3] osv...  */
+        /*overflow: hidden;
+          background-color: #333; /* menylinjens bakgrunnsfarge */
+        margin: 0px;
+        /*avstand mellom hver boks*/
+        padding: 0px;
+        /*avstand mellom innholdet og kanten av "ul"*/
+        text-align: center;
+
+      }
+
+      ul li {
+        /* samme funksjon hvis "ul li" eller bare "li" :/ */
+        float: left;
+        /*  alle "li" elementer i "ul" vil starte fra venstre til h�yre*/
+        width: 200px;
+        height: 40px;
+        background-color: black;
+        opacity: 0.8;
+        line-height: 40px;
+        font-size: 20px
+      }
+
+      ul li a {
+        text-decoration: none;
+        color: white;
+        display: block;
+      }
+
+      ul li a:hover {
+        background-color: green;
+      }
+
+      ul li ul li {
+        display: none;
+      }
+
+      ul li:hover ul li {
+        display: block;
+      }
+
+
+      /*--- menylinje center ---*/
+      .nav {
+        width: 800px;
+        margin: auto;
+      }
+
+      .nav li {
+        float: left;
+      }
+
+      .nav a {
+        text-align: center;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--menylinje-->
+    <ul class="nav">
+      <li><a href="index.html">Home</a>
+        <!--
+          <ul>
+            <li><a>1.1</a></li>
+            <li><a>1.2</a></li>
+            <li><a>1.3</a></li>
+          </ul>
+        </li>-->
+      <li><a href="music.html">Musiclist</a>
+        <!--
+          <ul>
+            <li><a>2.1</a></li>
+            <li><a>2.2</a></li>
+            <li><a>2.3</a></li>
+          </ul>
+        </li>-->
+      <li><a href="index3.html">about</a>
+        <!--
+          <ul>
+            <li><a>3.1</a></li>
+            <li><a>3.2</a></li>
+            <li><a>3.3</a>
+            </li>
+          </ul>
+        </li>-->
+      <li><a> &#x25BC; </a>
+        <ul>
+          <li><a href=".html">1</a></li>
+          <li><a href=".html">2</a></li>
+          <li><a href=".html">3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
