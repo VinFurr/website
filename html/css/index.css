@@ -5,13 +5,14 @@ body {
   background-position: center;
   background-attachment: fixed;
   /*background-color: rgb(0, 128, 255); rgb: red, green, blue*/
+  margin: auto;
   margin-right: 5%;
   margin-left: 5%;
 
 }
 
 ul {
-    list-style: none; /* hindrer den i � vise �[1], �[2], �[3] osv...  */
+    list-style: none; /* hindrer den i å vise �[1], �[2], �[3] osv...  */
     /*overflow: hidden;
     background-color: #333; /* menylinjens bakgrunnsfarge */
     margin: 0px; /*avstand mellom hver boks*/
