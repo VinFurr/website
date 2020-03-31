@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>redirect</title>
+      <title>Please Wait...</title>
 
       <meta http-equiv="Refresh" content="5; url=./html/index.html">
+      <script type="text/javascript">
+        function RandomImages() {
+          var MyImages = new Array();
+          MyImages[0] = "./pictures/arts/phoenix_laura.jpg";
+          MyImages[1] = "./pictures/arts/Maevetigerdoll.jpg";
+          MyImages[2] = "./pictures/arts/morning_flora.jpg";
+          MyImages[3] = "./pictures/arts/morning_kat.jpg";
+          MyImages[4] = "./pictures/arts/morning_raine.jpg";
+          MyImages[5] = "./pictures/arts/norwegian_forest_cat.jpg";
+          MyImages[6] = "./pictures/arts/morning_laura.jpg";
+          MyImages[7] = "./pictures/arts/long_hair_kat.jpg";
+
+          var MyLinks = new Array();
+          MyLinks[0] = "https://www.deviantart.com/twokinds/art/Phoenix-Laura-829195844";
+          MyLinks[1] = "https://www.deviantart.com/twokinds/art/Maeve-s-Tiger-Doll-656820533";
+          MyLinks[2] = "https://www.deviantart.com/twokinds/art/Good-Morning-Flora-Redux-825848662";
+          MyLinks[3] = "https://www.deviantart.com/twokinds/art/Good-Morning-Kathrin-832629095";
+          MyLinks[4] = "https://www.patreon.com/posts/good-morning-35440380";
+          MyLinks[5] = "https://www.deviantart.com/twokinds/art/Norwegian-Forest-Cat-822329839";
+          MyLinks[6] = "https://www.patreon.com/posts/good-morning-35474956";
+          MyLinks[7] = "https://www.deviantart.com/twokinds/art/Long-Haired-Kat-822221386";
+
+          var rnd = Math.floor(Math.random() * MyImages.length);
+
+          document.write('<a href="'+MyLinks[rnd]+'" target="_blank"><img src="'+MyImages[rnd]+'" width="50%" height="30%"></a>');
+        }
+
+      </script>
+
    </head>
    <body><center>
-      <h3>please wait while redirecting...</h3>
-      <h4>have a look on this beutiful art while waiting</h4>
-      <a href="https://www.deviantart.com/twokinds/art/Maeve-s-Tiger-Doll-656820533" target="_blank">
+      <h3>Please wait while redirecting...</h3>
+      <h4>Have a look on this beutiful art while waiting</h4>
+      <script type="text/javascript">
+        RandomImages();
+      </script>
+      <!--<a href="https://www.deviantart.com/twokinds/art/Maeve-s-Tiger-Doll-656820533" target="_blank">
         <img src="./pictures/Maevetigerdoll.jpg" width="40%" height="40%" alt="">
-      </a>
+      </a>-->
    </center></body>
 </html>
