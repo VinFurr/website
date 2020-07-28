@@ -73,3 +73,7 @@ ul li { /* samme funksjon hvis "ul li" eller bare "li" :/ */
 .left {
   text-align: left;
 }
+
+.circle {
+  border-radius: 100%;
+}

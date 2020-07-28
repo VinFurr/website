@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+h1 {
+  margin-top: 0;
+  font-family: Sacramento;
+  font-size: 50px;
+}
+@font-face {
+  font-family: Sacramento;
+  src: url("./../../../font/Sacramento.ttf");
+}
+
+.top-cont{
+  background-color: #E4F9F5;
+  padding-top: 50px;
+  position: relative;
+}
+
+.mid-cont{
+  background-color: red;
+  height: 100px;
+}
+
+.bot-cont{
+  background-color: blue ;
+  height: 100px;
+}
+
+.top-cloud{
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+.bot-cloud{
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
