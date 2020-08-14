@@ -22,24 +22,35 @@ h3 {
 a {
   color: #11999E;
 }
+hr {
+  border-top: 7px dotted #a3a3a3;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  width: 7%
+}
 
 @font-face {
   font-family: Sacramento;
-  src: url("./../../../font/Sacramento.ttf");
+  src: url(./../../../font/Sacramento.ttf);
 }
 
-.top-containter{
+.top-container{
   background-color: #E4F9F5;
   padding-top: 50px;
   position: relative;
 }
 
-.middle-containter{
-
+.middle-container{
+  background-color: #E4F9F5;
+  padding-top: 50px;
+  position: relative;
 }
 
-.bottom-containter{
-
+.bottom-container{
+  background-color: #0fabbc;
+  padding-top: 50px;
+  position: relative;
 }
 
 .top-cloud{
@@ -62,4 +73,21 @@ a {
   margin: 100px auto 100px auto;
   text-align: left;
   line-height: 2;
+}
+
+.profile-pic {
+  border-radius: 100%;
+}
+
+.animation {
+  transition-duration: 1000ms;
+}
+
+.animation:hover{
+  opacity: 0;
+  transition-duration: 1000ms;
+}
+
+.intro{
+  width: 30%;
 }
