@@ -35,6 +35,42 @@ hr {
   src: url(./../../../font/Sacramento.ttf);
 }
 
+.animation {
+  transition-duration: 1000ms;
+}
+
+.animation:hover{
+  opacity: 0;
+  transition-duration: 1000ms;
+}
+ .skill_image1{
+   max-width: 125px;
+   max-height: 125px;
+   float: left;
+   margin-right: 30px;
+ }
+
+ .skill_image2{
+   max-width: 125px;
+   max-height: 125px;
+   float: right;
+   margin-left: 30px;
+ }
+
+.intro{
+  width: 30%;
+}
+.profile-pic {
+  border-radius: 100%;
+}
+.skill-row {
+  width: 40%;
+  margin: 0px auto 100px auto;
+  text-align: left;
+  line-height: 1.7;
+}
+
+
 .top-container{
   background-color: #E4F9F5;
   padding-top: 50px;
@@ -42,15 +78,16 @@ hr {
 }
 
 .middle-container{
-  background-color: #E4F9F5;
+  background-color: white;
   padding-top: 50px;
   position: relative;
 }
 
 .bottom-container{
-  background-color: #0fabbc;
+  background-color: #E4F9F5;
   padding-top: 50px;
   position: relative;
+  margin-bottom: 0;
 }
 
 .top-cloud{
@@ -66,28 +103,4 @@ hr {
 
 .underline{
   text-decoration: underline;
-}
-
-.skill-row {
-  width: 50%;
-  margin: 100px auto 100px auto;
-  text-align: left;
-  line-height: 2;
-}
-
-.profile-pic {
-  border-radius: 100%;
-}
-
-.animation {
-  transition-duration: 1000ms;
-}
-
-.animation:hover{
-  opacity: 0;
-  transition-duration: 1000ms;
-}
-
-.intro{
-  width: 30%;
 }
