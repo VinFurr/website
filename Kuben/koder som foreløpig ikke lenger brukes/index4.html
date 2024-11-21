@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>test4</title>
+  </head>
+  <style>
+    body {
+      background-image: url("./nature.jpg");
+      background-size: cover;
+      /*background-color: rgb(0, 128, 255); rgb: red, green, blue*/
+      color: white;
+      margin: auto;
+    }
+
+    ul {
+        list-style: none; /* hindrer den i å vise •[1], •[2], •[3] osv...  */
+        /*overflow: hidden;
+        background-color: #333; /* menylinjens bakgrunnsfarge */
+        margin: 0px; /*avstand mellom hver boks*/
+        padding: 0px;  /*avstand mellom innholdet og kanten av "ul"*/
+        text-align: center;
+
+    }
+
+    ul li { /* samme funksjon hvis "ul li" eller bare "li" :/ */
+        float: left; /*  alle "li" elementer i "ul" vil starte fra venstre til høyre*/
+        width: 200px;
+        background-color: black;
+        height: 40px;
+        opacity: 0.8;
+        line-height: 40px;
+
+        font-size: 20px
+    }
+     ul li a {
+       text-decoration: none;
+       color: white;
+       display: block;
+     }
+
+     ul li:hover {
+       background-color: green;
+     }
+
+     ul li ul li {
+       display: none;
+     }
+     ul li:hover ul li ul li {
+       display: none;
+     }
+
+     ul li:hover ul li{
+       display: block;
+     }
+     ul li ul li:hover ul li{
+       display: block;
+       left: 200px;
+     }
+
+     /*--- menylinje center ---*/
+     #nav li {
+     float:left;
+     }
+     #nav a {
+     text-align:center;
+     text-decoration:none;
+     }
+
+/*
+     ul li ul li ul li{
+       display: none;
+     }
+
+     ul li ul li:hover ul li{
+       display: block;
+     }
+
+     ul li ul li ul li ul li{
+       display: none;
+     }
+
+     ul li ul li ul li:hover ul li{
+       display: block;
+     }*/
+  </style>
+  <body>
+
+
+
+    <ul id="nav">
+      <li><a>1</a>
+        <ul>
+          <li><a>1.1</a></li>
+          <li><a>1.2</a></li>
+          <li><a>1.3</a></li>
+        </ul>
+      </li>
+      <li><a>2</a>
+        <ul>
+          <li><a>2.1</a></li>
+          <li><a>2.2</a></li>
+          <li><a>2.3</a></li>
+        </ul>
+      </li>
+
+      <li><a>3</a>
+        <ul>
+          <li><a>3.1</a></li>
+          <li><a>3.2</a></li>
+          <li><a>3.3</a>
+            <ul>
+              <li><a>3.3.1</a>
+                <ul>
+                  <li><a >3.3.1.1</a></li>
+                </ul>
+              </li>
+              <li><a>3.3.2</a>
+                <ul>
+                  <li><a>3.3.2.1</a></li>
+                </ul>
+              </li>
+              <li><a>3.3.3</a>
+                <ul>
+                  <li><a>3.3.3.1</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a>4</a>
+        <ul>
+          <li><a>4.1</a></li>
+          <li><a>4.2</a></li>
+          <li><a>4.3</a></li>
+        </ul>
+      </li>
+    </ul>
+
+
+  </body>
+</html>

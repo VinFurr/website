@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="icon" type="image/gif" href="#" ></link>
+    <style>
+      body {
+        background-color: rgb(0, 128, 255);
+        position: absolute;
+        left: 5%;
+        right:5%;
+        text-align: center;
+      }
+
+      #eksempel {
+
+        transform:rotate(0deg);
+      }
+    </style>
+    <script>
+      var gradtall = 20;
+
+      function hjerte() {
+        console.log("funksjon hjerte");
+
+        test = "rotate("+gradtall+"deg)";
+        console.log(test);
+        document.getElementById("eksempel").style.transform = test;
+
+        console.log(gradtall+"rad");
+        gradtall = gradtall+20;
+      }
+
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </head>
+  <body>
+    <h1>10B dansende hjerter</h1>
+    <br><br><br>
+    <button onclick="hjerte()">Roter</button>
+    <br><br><br>
+    <img id = "eksempel" src="10B_dansende_hjerter.png"></img>
+    <br><br><br><br>
+    <button style="height:30px;width:150px" onclick="goBack()">&#x21D0; Gå tilbake</button>
+  </body>
+</html>

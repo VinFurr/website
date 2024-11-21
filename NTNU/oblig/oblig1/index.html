@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<!--
+Sory Carlos, it seems that i had a lot of changes and there is a possibility that there might be some css classes that has been created that is no longer in use.
+-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./icons/favicon.ico">
+  </head>
+  <!--
+  Home page: This is the first page users will see. Here, you can include as
+  many relevant information as you want to but, at least, it must contain:
+    o An image and a description about you. The description must use
+      different semantic tags. -ok
+
+        § Cite your favourite book, essay, poem, song, painting or
+          creative work in general. -ok
+
+        § Quote a small snippet from the chosen creative work (text). - ok
+
+    o A list of hobbies.
+
+    o (*) Anything else you want to remark (remember, this is the first
+      page users will read and therefore you
+-->
+  <body class="home_text_color home_background">
+    <div class="home_top_background">
+      <ul class="navbar_background">
+        <li class="blue"><a href="index.html">Home</a></li>
+        <li class="orange"><a href="portfolio.html">Portfolio</a></li>
+        <li class="purple"><a href="resume.html">Resume</a></li>
+        <li class="green"><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="top_container">
+        <h1 class="sacramento home_head_color ">I'm Vincent</h1>
+        <h2 class="home_text_color" >a web <span class="underline">designer</span></h2>
+        <img class="sml_img" src="./images/crystal.png" alt="crystal.png">
+        <img class="lrg_img" src="./images/crystal.png" alt="crystal.png">
+        <img class="sml_img" src="./images/crystal.png" alt="crystal.png">
+      </div>
+    </div>
+    <div class="middle_container">
+      <img class="home_image" src="./images/vincent.jpg" alt="vincent.jpg">
+      <h2 class="home_head_color">Hi.</h2>
+      <p>I am a web <strong>designer</strong> currently based in Gjøvik, Norway. </p>
+      <p>I like computers, technology and I believe that <em>everything</em> might be possible if there is enough passion for it.</p>
+      <p>I also have different <a href="#hobbies">hobbies and interests</a> during my freetime and i also like to listen to music. <br>Below is a quote from one of my favorite songs:</p>
+
+      <blockquote cite="https://www.youtube.com/watch?v=pg2AIHhFW2E">
+        Fight, Fight for what you believe in<br>
+        Don't give up your dreams in vein<br>
+        Try; Re-Try to do the best you can<br>
+        Unleash The Power
+      </blockquote>
+      <hr>
+    </div>
+    <div class="bottom_container">
+
+      <div>
+        <h2 class="center home_head_color">My Skills</h2>
+        <div class="skill_min_height">
+          <img class="skill_image_left" src="./images/codes_icon.png" alt="codes_icon.png">
+          <h3>Design & Development</h3>
+          <p>Designing and developing websites is what I do and learn. I am still a student so there is much more to lean,
+            but you can be sure that what I am learning is about the newest technologies and I will <strong>always try to be up to date!</strong></p>
+        </div>
+        <!--
+        <div class="skill_min_height">
+          <img class="skill_image_right" src="./images/cooking.svg" alt="cooking.svg">
+          <h3>Cooking</h3>
+          <p>I did have some cooking experience from high school which comes handy. Because i can't just relay on my parents or premade
+            food from the store right? <br>Having experience doesn't mean that i don't booch the cooking though...</p>
+      </div>-->
+
+        <figure>
+          <img class="home_code_img" src="./images/code.png" alt="code.png">
+          <figcaption class="center">The codes for this site</figcaption>
+        </figure>
+      </div>
+      <hr>
+        <div>
+          <h2 class="center home_head_color" id="hobbies">Hobbies & interests</h2>
+          <div class="card">
+            <img class= "skill_image_left" src="./images/paw_icon.png" alt="paw_icon.png">
+            <h3>Furry</h3>
+            <p>I have really big interests in anthronoprhical animals and I am one what people considers a furry.
+              Although there is much hate against furries on internet, i am not afraid to let the world know who i am and all the hate against the furry comunnity is also not deserved</p>
+          </div>
+          <div class="card">
+            <img class= "skill_image_right" src="./images/motherboard.png" alt="motherboard.png">
+            <h3>PC building</h3>
+            <p>Builing a desktop computer is something i have good experience with.
+              Assembling a computer with different parts is something that interests me and i love how something i made can be so useful</p>
+          </div>
+          <div class="card">
+            <img class= "skill_image_left" src="./images/piano.png" alt="piano.png">
+            <h3>Piano</h3>
+            <p>I sometimes play piano in my freetime. I just cant describe how it feels to play beautiful music with my own hands and i can already play <del>6</del> <ins>7</ins>different songs without notes</p>
+          </div>
+        </div>
+      </div>
+  <!-- Hey Carlos, i know that i was supposed to use this instead:
+      <ul>
+        <li>Furry</li>
+        <li>PC building</li>
+        <li>Piano</li>
+      </ul>
+
+      maybe i should have used this instead with [class]{list-style-type: none;}? the ul li feels unnecessary though:
+      <div>
+        <h2 class="center home_head_color">Hobbies & interests</h2>
+        <ul>
+          <li>
+            <div class="skill_min_height">
+              <img class= "skill_image_left" src="./images/paw_icon.png" alt="paw_icon.png">
+              <h3>Furry</h3>
+              <p>I have really big interests in anthronoprhical animals and i am one what you can consider a furry.
+                My "Internet name" is VinFurr, but sometimes also calls myself for FurryGamer</p>
+            </div>
+          </li>
+          <li>
+            <div class="skill_min_height">
+              <img class= "skill_image_right" src="./images/motherboard.png" alt="motherboard.png">
+              <h3>PC building</h3>
+              <p>Builing a desktop vcomputer is something i have good experience with.
+                Assembling a computer with different parts is something that interests me and i love how something i made can be so useful</p>
+            </div>
+          </li>
+          <li>
+            <div class="skill_min_height">
+              <img class= "skill_image_left" src="./images/piano.png" alt="piano.png">
+              <h3>Piano</h3>
+              <p>I sometimes play piano in my freetime. I just cant describe how it feels to play beautiful music with my own hands.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      -->
+
+
+      <footer>
+        <div class="section">
+          <a class="inline" href="https://www.facebook.com/VinFurr">Facebook</a>
+          <a class="inline" href="https://twitter.com/VinFurr">Twitter</a>
+          <a class="inline" href="https://www.youtube.com/vinfurrpiano">Youtube</a>
+          <p class=footer_text>© 2020<a href="http://folk.ntnu.no/hdsun/NTNU/oblig/oblig1/index.html"> Vincent Sun</a></p>
+        </div>
+      </footer>
+  </body>
+</html>

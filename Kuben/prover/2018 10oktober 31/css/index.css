@@ -1,0 +1,98 @@
+body {
+  background-image: url("./../bilder/rosa_sløyfe_1.png");
+  background-size:  contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-position: center;
+  background-attachment: fixed;
+  /*background-color: rgb(0, 128, 255); rgb: red, green, blue*/
+  color: white;
+}
+
+ul {
+    list-style: none; /* hindrer den i å vise •[1], •[2], •[3] osv...  */
+    /*overflow: hidden;
+    background-color: #333; /* menylinjens bakgrunnsfarge */
+    margin: 0px; /*avstand mellom hver boks*/
+    padding: 0px;  /*avstand mellom innholdet og kanten av "ul"*/
+    text-align: center;
+
+}
+
+ul li { /* samme funksjon hvis "ul li" eller bare "li" :/ */
+    float: left; /*  alle "li" elementer i "ul" vil starte fra venstre til høyre*/
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    opacity: 0.8;
+    line-height: 40px;
+
+    font-size: 20px
+}
+ ul li a {
+   text-decoration: none;
+   color: white;
+   display: block;
+ }
+
+ ul li a:hover {
+   background-color: green;
+ }
+
+ ul li ul li {
+   display: none;
+ }
+
+ ul li:hover ul li{
+   display: block;
+ }
+
+
+ /*--- menylinje center ---*/
+ .nav {
+ width:800px;
+ margin: auto;
+ }
+ .nav li {
+ float:left;
+ }
+ .nav a {
+ text-align:center;
+ text-decoration:none;
+ }
+
+/*--- ---*/
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+.justify {
+  text-align: justify;
+}
+.inherit {
+  text-align: inherit;
+}
+
+.center1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: blue;
+}
+.middle {
+  text-align: center;
+  vertical-align: middle;
+}
+.textbox{
+background-color: white;
+opacity: 0.8;
+z-index: -1
+width: 800px;
+margin: auto;
+text-align: center;
+}

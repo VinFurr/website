@@ -1,0 +1,99 @@
+body {
+  font-size: 28px;
+  background-color: lightblue;
+  background-image: url("./Illustrasjonsbilder/hage_4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size:  cover;
+  }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+
+
+
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+.justify {
+  text-align: justify;
+}
+.inherit {
+  text-align: inherit;
+}
+
+.center1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: blue;
+}
+.middle {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.hjem {
+  background-color:yellow;
+  }
+
+.text_background-black {
+  text-shadow: 2px 2px black;
+}
+
+.text_background-orange {
+  text-shadow: 2px 2px orange;
+}
+
+.text_background-lightblue {
+  text-shadow: 2px 2px lightblue;
+}
+
+.text_placement {
+    position: absolute;
+    left: 5%;
+    right:5%;
+  }
+
+.bar_placement {
+      position: absolute;
+      left: 0%;
+      right:0%;
+    }

@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body{
+
+  background-color: lightgrey;
+  width: 100%;
+  height: 100vh;
+}
+.center{
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+nav ul{
+  background-color: black;
+  opacity: 0.7;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul li{
+  min-width: 50px;
+  padding: 15px 0;
+  color: white;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+}
+.nav__button--blue:hover{
+  background-color: blue;
+}
+.nav__button--green:hover{
+  background-color: green;
+}
+.nav__button--yellow:hover{
+  background-color: yellow;
+}
+.nav__button--yellow a:hover{
+  color: grey;
+}
+.nav__button--font{
+  font-family: sans-serif;
+  font-size: 1.4em;
+  text-decoration: none;
+  color:white;
+  padding: 15px;
+}
+
+#logo{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+#logo path:nth-child(1){
+  stroke-dasharray:356.35198974609375;
+  stroke-dashoffset:;
+}
+#logo path:nth-child(2){
+  stroke-dasharray:159.87261962890625;
+  stroke-dashoffset:;
+}
+#logo path:nth-child(3){
+  stroke-dasharray:;
+  stroke-dashoffset:;
+}
+#logo path:nth-child(4){
+  stroke-dasharray:;
+  stroke-dashoffset:;
+}
+#logo path:nth-child(5){
+  stroke-dasharray:;
+  stroke-dashoffset:;
+}
+#logo path:nth-child(6){
+  stroke-dasharray:;
+  stroke-dashoffset:;
+}
+#logo path:nth-child(7){
+  stroke-dasharray:;
+  stroke-dashoffset:;
+}
+#logo path:nth-child(8){
+  stroke-dasharray:;
+  stroke-dashoffset:;
+}
+#logo path:nth-child(9){
+  stroke-dasharray:;
+  stroke-dashoffset:;
+}
+#logo path:nth-child(10){
+  stroke-dasharray:;
+  stroke-dashoffset:;
+}
+#logo path:nth-child(11){
+  stroke-dasharray:;
+  stroke-dashoffset:;
+}
+#logo path:nth-child(12){
+  stroke-dasharray:;
+  stroke-dashoffset:;
+}
+#logo path:nth-child(13){
+  stroke-dasharray:;
+  stroke-dashoffset:;
+}
+#logo path:nth-child(14){
+  stroke-dasharray:;
+  stroke-dashoffset:;
+}
+#logo path:nth-child(15){
+  stroke-dasharray:;
+  stroke-dashoffset:;
+}
+#logo path:nth-child(16){
+  stroke-dasharray:;
+  stroke-dashoffset:;
+}
+#logo path:nth-child(17){
+  stroke-dasharray:;
+  stroke-dashoffset:;
+}
+#logo path:nth-child(18){
+  stroke-dasharray:;
+  stroke-dashoffset:;
+}
+#logo path:nth-child(19){
+  stroke-dasharray:;
+  stroke-dashoffset:;
+}
+#logo path:nth-child(20){
+  stroke-dasharray:;
+  stroke-dashoffset:;
+}
+#logo path:nth-child(21){
+  stroke-dasharray:;
+  stroke-dashoffset:;
+}
+#logo path:nth-child(22){
+  stroke-dasharray:;
+  stroke-dashoffset:;
+}
+#logo path:nth-child(23){
+  stroke-dasharray:;
+  stroke-dashoffset:;
+}

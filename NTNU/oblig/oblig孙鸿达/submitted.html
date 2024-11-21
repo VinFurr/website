@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--This wont work in real. Need php because the server need to process the information-->
+    <!--SEO-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Submitted</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/master.css">
+    <!--Other-->
+    <link rel="icon" href="images/favicon/hunger-icon.png">
+    <meta http-equiv="refresh" content="5; url=contact.html">
+  </head>
+
+  <body>
+    <header class="header_background">
+      <nav>
+        <ul>
+          <li class="nav-img">
+            <!--image in a navbar is such a pain... -->
+            <a href="https://sdgs.un.org/goals/goal2" target="_blank">
+              <!--image in a navbar is such a pain... -->
+              <img class="nav-img" src="images/2-zero-hunger.png" alt="Zero Hunger logo">
+              <!--image in a navbar is such a pain... -->
+            </a>
+          </li>
+          <li class="nav-button"><a href="index.html">Home</a></li>
+          <li class="nav-button"><a href="contact.html">Contact</a></li>
+          <li class="nav-button"><a href="game.html">Game</a></li>
+        </ul>
+      </nav>
+      <div class="header_content">
+        <div class="content_box">
+          <div class="content_padding">
+            <h1>Your message has been submitted!</h1>
+            <h2 id="countdown">This page will autoatically go back in 5 seconds</h2>
+            <p>Or just click on the button below:</p>
+            <button class="button" onclick="window.location.href='contact.html';">Go back</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <footer>
+      <div class="footer_content">
+        <!--<img src="images/ntnu_logowtext.png" alt="">-->
+        <a href="https://www.ntnu.edu/" target="_blank">
+          <img class="footer-logo" src="images/logo_ntnu_tag_english.svg" alt="NTNU - Norwegian Universityy of Science and Technology">
+        </a>
+        <div class="footer_content"><!--make sure the map is 100% wide when screen is less than 600px-->
+          <p class="footer_txt"><em>Address: Raufossvegen 40, 2821 Gjøvik <br> Phone number:
+            <a href="tel:004761135400">+0047 61 13 54 00</a>
+          </em></p>
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe class="gmap_canvas" src="https://maps.google.com/maps?q=Raufossvegen%2040&t=&z=13&ie=UTF8&iwloc=&output=embed">
+              </iframe><a href="https://embedgooglemap.net/mapv2/">Google maps</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="footer_txt"><span class="italic">This page was created as part of the
+            <a href="https://www.ntnu.edu/studies/courses/IDG1292#tab=omEmnet" target="_blank">subject IDG1292</a>
+            of the department of design by H. D. Vincent Sun, student from
+            <a href="https://www.ntnu.edu/studies/aarweb" target="_blank">ÅRWEB</a></span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!--This js code was actually taken from stackoverflow i think... the code is indentical to the one i used in http://folk.ntnu.no/hdsun/index.html-->
+    <script>
+    var timeleft = 4;
+    var downloadTimer = setInterval(function(){
+      if(timeleft <= 0){
+        clearInterval(downloadTimer);
+        document.getElementById("countdown").innerHTML = "Redirecting...";
+      } else {
+        document.getElementById("countdown").innerHTML = "This page will autoatically go back in " + timeleft + " seconds";
+      }
+      timeleft -= 1;
+    }, 1000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+body{
+  margin: 5%;
+}
+body >*{
+  margin: 20px 0 20px 0;
+}
+
+
+.card {
+  background-color: white;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 7px 7px 10px 3px darkgrey;
+}
+
+figure {
+  width: 100%
+}
+.left{
+  width: 45%;
+
+}
+.right{
+  width: 45%;
+  margin-top: auto;
+  margin-bottom: auto;
+  vertical-align: middle;
+
+}
+.card div {
+  display: inline-block;
+}
+
+.right p{
+  vertical-align: middle;
+}
+
+.ex1_3{
+  text-align: justify;
+  padding: 5%;
+
+  background-color: white;
+  box-sizing: border-box;
+
+  width: 100%;
+
+  box-shadow: 7px 7px 10px 3px darkgrey;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Choose one or...</title>
+    <meta http-equiv="Refresh" content="30; url=./10sec_out.html">
+    <style>
+      body{
+        margin: inherit;
+        text-align: center;
+        padding: inherit;
+        background-color: #00bcd4;
+      }
+      button{
+        height: 33px;
+        width: 200px;
+      }
+      h1{
+        padding-top: 10%;
+        margin-top: inherit;
+      }
+      table{
+        margin: auto;
+      }
+      td{
+        padding: 5px 15px 5px 15px;
+        width: 15%;
+      }
+      .div1{
+
+        padding: 0 20% 0 20%;
+        background-color: #b2ebf2;
+      }
+      .div2{
+        background-color: #1dd3bd;
+        padding: 0 20% 0 20%;
+        margin: inherit;
+      }
+      .div3{
+        background-color: #00bcd4;
+        padding: 0 20% 0 20%;
+        margin: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+     __    __   ________   __          __           _________
+    /_/|  /_/| /_______/| /_/|        /_/|         /________  \
+    | ||  | || |  _____|/ | ||        | ||        /  ______  \ |
+    | ||__| || | ||___    | ||        | ||        | //     \  ||
+    | |/__| || | |/__/|   | ||        | ||        | ||      | ||
+    |  ___  || |  ___|/   | ||        | ||        | ||      | ||
+    | ||  | || | ||_____  | ||______  | ||______  | | \_____/ ||
+    | ||  | || | |/____/| | |/_____/| | |/_____/|  \ \_____/ //
+    |_|/  |_|/ |_______|/ |________|/ |________|/   \_______//
+    -->
+    <div class="div1">
+      <script type="text/javascript">
+      var timeleft = 29;
+      var downloadTimer = setInterval(function(){
+      if(timeleft <= 0){
+        clearInterval(downloadTimer);
+        document.getElementById("countdown").innerHTML = "redirecting...";
+      } else {
+        document.getElementById("countdown").innerHTML = "You got " + timeleft + " seconds to choose before...";
+      }
+      timeleft -= 1;
+      }, 1000);
+
+      </script>
+      <h1 id="countdown">You got 30 seconds to choose before...</h1>
+      <table>
+        <tr>
+          <td>
+            <a href="./NTNU/index.php"><button type="button" name="button">NTNU WEBSITE</button></a>
+          </td><td>
+            <a href="./Kuben/index.php"><button type="button" name="button">Kuben Vgs. website</button></a>
+          </td><td>
+            <a href="./Personal_udemy/index.html"><button type="button" name="button">Personal Website with online course</button></a>
+          </td><td>
+            <a href="./Personal/index.html"><button type="button" name="button">Personal Website</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>The website i have made here at NTNU (currently unavailable)</td>
+          <td>The website i made in high school. Note: Some functions might be faulty due to different password and account to databases in different domains. <br>It is also very buggy... sorry about that</td>
+          <td>My personal website with help from an <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">online course</a></td>
+          <td>My personal website before i took the online course</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td colspan="2">Note: there might be several bugs too with special characters for example chinese signs and the last 3 letters in the norwegian alpahabet (æøå). i will try to fix it as soon as possible <br>EDIT: It shall be fixed now</td>
+          <td></td>
+        </tr>
+      </table>
+      <br>
+    </div>
+    <div class="div2">
+      <br>
+    </div>
+    <div class="div3">
+      <br><br>
+      <a class="" href="https://www.facebook.com/vinfurr">Facebook</a>
+      <a class="" href="https://twitter.com/vinfurr">Twitter</a>
+      <a class="" href="https://twitter.com/vinfurrgamer">Twitter</a>
+      <a class="" href="https://www.youtube.com/vinfurrpiano">YouTube</a>
+      <a class="" href="https://www.twitch.tv/vinfurr">Twitch</a>
+      <a class="" href="https://vinfurr.github.io/website">Website</a>
+      <a class="" href="https://www.finn.no/user/profile/profile.html?id=990448736">Finn</a>
+      <p>© 2020 Vincent Sun.</p>
+      <br>  <br>
+    </div>
+
+  </body>
+</html>

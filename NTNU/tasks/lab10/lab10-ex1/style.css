@@ -1,0 +1,125 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 300px;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+body>p {
+    font-style: italic;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row .box {
+    margin: 20px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    font-size: 2em;
+    color: blue;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes background-color-animation {
+  0% {background-color: red;}
+  16.67% {background-color: orange;}
+  33.33% {background-color: yellow;}
+  50% {background-color: green;}
+  66.67% {background-color: blue;}
+  83.35% {background-color: purple;}
+  100% {background-color: red;}
+}
+@keyframes animation-rotation {
+  50% {transform: rotate(-90deg);}
+
+}
+@keyframes translate-animation {
+  0%   {transform: translate(0px,0px);}
+  25%  {transform: translate(200px,0px);}
+  50%  {transform: translate(200px,200px);}
+  75%  {transform: translate(0px,200px);}
+  100% {transform: translate(0px,0px);}
+}
+@keyframes translate-rotate-animation {
+/*  0%   {transform: translate(0px,0px) rotate(0deg);}
+  12.5%   {transform: translate(200px,0px) rotate(-22.5deg);}
+  25%  {transform: translate(200px,200px) rotate(-45deg);}
+  37.5%  {transform: translate(0px,200px) rotate(-67.5deg);}
+  50% {transform: translate(0px,0px) rotate(-90deg);}
+  61.14%   {transform: translate(0px,200px) rotate(-67.5deg);}
+  71.43%  {transform: translate(200px,200px) rotate(-45deg);}
+  85.71%  {transform: translate(200px,0px) rotate(-22.5deg);}
+  100% {transform: translate(0px,0px) rotate(0deg);}*/
+  0%   {transform: translate(0px,0px) rotate(0deg);}
+  25%   {transform: translate(200px,0px) rotate(-22.5deg);}
+  50%  {transform: translate(200px,200px) rotate(-45deg);}
+  75%  {transform: translate(0px,200px) rotate(-67.5deg);}
+  100% {transform: translate(0px,0px) rotate(-90deg);}
+}
+@keyframes translate-rotate360-animation {
+    25% {transform: translate(100%, 0) rotate(-360deg);}
+    50% {transform: translate(100%, 100%) rotate(360deg);}
+    75% {transform: translate(0, 100%) rotate(-360deg);}
+    100% {transform: translate(0, 0) rotate(360deg);}
+}
+
+#box19{
+  animation-duration: 5s;
+  animation-name:background-color-animation;
+  animation-iteration-count: infinite;
+
+}
+#box20{
+  animation-duration: 5s;
+  animation-name:background-color-animation, animation-rotation;
+  animation-iteration-count: infinite;
+}
+#box21{
+  animation-duration: 5s;
+  animation-name:background-color-animation, animation-rotation, translate-animation;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#box22{
+  animation-duration: 5s;
+  animation-name:background-color-animation;
+  animation-iteration-count: infinite;
+}
+#box22 {
+    animation-name: background-color-animation, rotation-animation, translate-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#box23{
+  animation-duration: 5s;
+  animation-name:background-color-animation, translate-rotate-animation;
+  animation-iteration-count: infinite;
+}
+#box23 {
+    animation-name: background-color-animation, translate-rotate-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#box24{
+  animation-duration: 5s;
+  animation-name:background-color-animation, translate-rotate360-animation;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>03B Pizzabestilling</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(0, 128, 255);
+      background-image: url("./03B_pizzabestilling.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 5%;
+      right:5%;
+
+      width:800px;
+      margin: auto;
+    }
+    .z1 {
+      z-index: 2;
+    }
+
+    .z0 {
+      position: absolute;
+      z-index: -1;
+      opacity: 0.8;
+    }
+    .innhold {
+      width:700px;
+      margin: auto;
+    }
+  </style>
+  <body>
+
+    <div class="z0">
+      <img src="03B_pizzabestilling_innholdsboks.png" height="600px" width="800px">
+    </div>
+
+<div class="innhold">
+      <h1>03B Pizzabestilling</h1>
+      <form action="http://www.informatikk1.net/felles/form_test_php/test_post.php" method="post">
+      </form>
+
+      <!-- #1 -->
+      <form action="http://www.informatikk1.net/cgi-bin/form_test/test_get.cgi" method="post">
+        Fornavn:<br>
+        <input type="text" name="felt1">
+        <br>
+        Etternavn:<br>
+        <input type="text" name="felt2">
+        <br>
+        Telefon:<br>
+        <input type="text" name="felt3">
+        <br>
+      <!--
+        <input type="submit" value="Submit">
+      </form>
+      -->
+      <!-- #2 -->
+      <!--
+      <form action="http://www.informatikk1.net/cgi-bin/form_test/test_get.cgi" method="get">
+      -->
+        Kommentar:<br>
+        <textarea name="felt4" rows = "4" cols = "50" placeholder="Noe du vil legge til?"></textarea>
+        <br>
+        <br>
+      <!--
+        <input type="submit" value="Submit">
+      </form>
+      -->
+      <!-- #3 -->
+      <!--
+      <form action="http://www.informatikk1.net/cgi-bin/form_test/test_get.cgi" method="get">
+      -->
+      <!--  Sjekkbokser:<br>-->
+        Dette vil jeg ha p� min pizza; <br>
+        <input type = "checkbox" name = "felt5" value= "Mais">Mais<br>
+        <input type = "checkbox" name = "felt6" value= "Tomater">Tomater<br>
+        <input type = "checkbox" name = "felt7" value= "Paprika">Paprika<br>
+        <br>
+      <!--
+        <input type="submit" value="Submit">
+      </form>
+      -->
+      <!-- #4 -->
+      <!--
+      <form action="http://www.informatikk1.net/cgi-bin/form_test/test_get.cgi" method="get">
+      -->
+      <!--  Radioknapper:<br>-->
+        Dette vil jeg ha p� min pizza; <br>
+        <input type = "radio" name = "felt8" value= "Storfe">Storfe<br>
+        <input type = "radio" name = "felt9" value= "Lam">Lam<br>
+        <input type = "radio" name = "felt10" value= "Kylling">Kylling<br>
+        <br>
+      <!--
+        <input type="submit" value="Submit">
+      </form>
+      -->
+<!-- #5 -->
+      <!--
+      <form action="http://www.informatikk1.net/felles/form_test_php/test_post.php" method="post">
+      -->
+      <!--  Menyliste:<p>-->
+        Denne st�rrelse vil jeg ha p� min pizza; <br>
+        <select name ="felt11" size = "1">
+          <option value= "Familiepizza" selected>Familiepizza</option>
+          <option value= "Stor pizza">Stor pizza</option>
+          <option value= "Normal pizza">Normal pizza</option>
+        </select>
+        <p>
+        <input type="submit" value="send bestilling">
+      </form>
+    </div>
+<!-- #6 -->
+<!-- #7 -->
+  </body>
+</html>

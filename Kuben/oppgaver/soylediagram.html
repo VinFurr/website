@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="icon" type="image/gif" href="#" ></link>
+  </head>
+  <style>
+    body {
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      left: 5%;
+      right:5%;
+      text-align: center;
+    }
+
+    .chart1 div {
+      font: 10px sans-serif;
+      background-color: steelblue;
+      text-align: right;
+      padding: 3px;
+      margin: 1px;
+      color: white;
+    }
+
+    .chart2 div {
+      font: 10px sans-serif;
+      background-color: steelblue;
+      text-align: right;
+      padding: 3px;
+      margin: 1px;
+      color: white;
+    }
+
+    .chart3 {
+      display: flex;
+      width: 200px;
+      height: 100px;
+      flex-direction: row;
+      align-items: flex-end;
+    }
+    .chart3>div{
+        background-color: blue;
+        margin: 5px;
+        flex-grow: 1;
+    }
+
+    .chart4 {
+      display: flex;
+      width: 200px;
+      height: 100px;
+      flex-direction: row;
+      align-items: flex-end;
+    }
+    .chart4>div{
+      background-color: blue;
+      margin: 5px;
+      flex-grow: 1;
+      text-align: center;
+      color: white;
+      font-family: times new roman;
+    }
+  </style>
+  <script>
+    function horisontalgraf() {
+
+      var kvinnetall_2009 = 67;
+      var kvinnetall_2005 = 64;
+      var kvinnetall_2001 = 60;
+      var kvinnetall_1997 = 60;
+      var kvinnetall_1993 = 65;
+      var kvinnetall_1989 = 59;
+
+      var pos_2009 = kvinnetall_2009 - 3;
+      var pos_2005 = kvinnetall_2005 - 3;
+      var pos_2001 = kvinnetall_2001 - 3;
+      var pos_1997 = kvinnetall_1997 - 3;
+      var pos_1993 = kvinnetall_1993 - 3;
+      var pos_1989 = kvinnetall_1989 - 3;
+
+      document.write ('<svg width="420" height="120">');
+
+      document.write ('  <g transform="translate(0,0)">');
+      document.write ('    <rect width="' + kvinnetall_2009 + '" height="19" fill="steelblue" ></rect>');
+      document.write ('    <text x="' + pos_2009 + ' " y="9.5" dy=".35em" fill="white" text-anchor="end">' + kvinnetall_2009 + '</text>');
+      document.write ('  </g>');
+
+      document.write ('  <g transform="translate(0,20)">');
+      document.write ('    <rect width="' + kvinnetall_2005 + '" height="19" fill="steelblue"></rect>');
+      document.write ('    <text x="' + pos_2005 + '" y="9.5" dy=".35em" fill="white" text-anchor="end">' + kvinnetall_2005 + '</text>');
+      document.write ('  </g>');
+
+      document.write ('  <g transform="translate(0,40)">');
+      document.write ('    <rect width="' + kvinnetall_2001 + '" height="19" fill="steelblue"></rect>');
+      document.write ('    <text x="' + pos_2001 + '" y="9.5" dy=".35em" fill="white" text-anchor="end">' + kvinnetall_2001 + '</text>');
+      document.write ('  </g>');
+
+      document.write ('  <g transform="translate(0,60)">');
+      document.write ('    <rect width="' + kvinnetall_1997 + '" height="19" fill="steelblue" ></rect>');
+      document.write ('    <text x="' + pos_1997 + '" y="9.5" dy=".35em" fill="white" text-anchor="end">' + kvinnetall_1997 + '</text>');
+      document.write ('  </g>');
+
+      document.write ('  <g transform="translate(0,80)">');
+      document.write ('    <rect width="' + kvinnetall_1993 + '" height="19"fill="steelblue" ></rect>');
+      document.write ('    <text x="' + pos_1993 + '" y="9.5" dy=".35em" fill="white" text-anchor="end">' + kvinnetall_1993 + '</text>');
+      document.write ('  </g>');
+
+      document.write ('  <g transform="translate(0,100)">');
+      document.write ('    <rect width="' + kvinnetall_1989 + '" height="19" fill="steelblue"></rect>');
+      document.write ('    <text x="' + pos_1989 + '" y="9.5" dy=".35em" fill="white" text-anchor="end">' + kvinnetall_1989 + '</text>');
+      document.write ('  </g>');
+
+      document.write('</svg>');
+    }
+  </script>
+  <body>
+    <h1></h1>
+    <div class="chart1">
+      <div style="width: 10px;">1</div>
+      <div style="width: 20px;">2</div>
+      <div style="width: 30px;">3</div>
+      <div style="width: 40px;">4</div>
+      <div style="width: 50px;">5</div>
+      <div style="width: 60px;">6</div>
+    </div>
+    <br>
+    <div class="chart2">
+      <div style="width: 100px;">6</div>
+      <div style="width: 200px;">5</div>
+      <div style="width: 300px;">4</div>
+      <div style="width: 400px;">3</div>
+      <div style="width: 500px;">2</div>
+      <div style="width: 600px;">1</div>
+    </div>
+    <br>
+    <script>
+      horisontalgraf()
+    </script>
+    <br>
+    <div class ="chart3">
+      <div style="height: 60px;">123</div>
+      <div style="height: 20px;"></div>
+      <div style="height: 40px;"></div>
+      <div style="height: 80px;"></div>
+    </div>
+    <br>
+    <div class ="chart4">
+      <div style="height: 60px;">60</div>
+      <div style="height: 20px;">20</div>
+      <div style="height: 40px;">40</div>
+      <div style="height: 80px;">80</div>
+    </div>
+
+  </body>
+</html>

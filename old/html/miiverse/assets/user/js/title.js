@@ -1,0 +1,1 @@
+var titles = {"14866558073673370352":{"name":"Splatoon™"},"6437256808920249212":{"name":"Pokkén Tournament"},"14866558073477520402":{"name":"Pokémon Omega Ruby & Alpha Sapphire"},"6437256808899678364":{"name":"Pokémon Super Mystery Dungeon"}};

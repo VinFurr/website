@@ -1,0 +1,54 @@
+body {
+  background-color: #DDDDDD;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 20%;
+  padding-right: 20%;
+  background: url("./assets/pattern.png");
+  background-attachment: fixed;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+h1{
+  background-image: url("./assets/grass.png");
+
+  background-size: auto 36px;;
+}
+.plant-box{
+  text-align: center;
+  box-shadow: 1px 10px 10px 1px #777777;
+  padding: 5%;
+  margin: 20px 0;
+  background-image: linear-gradient(#F7FFF5,#C2E7CD);
+}
+.plant-box:hover {
+  box-shadow: 10px 10px 5px 2px #af9e9e;
+  background-image: linear-gradient(#f1ebeb,#e1cfcf)
+}
+.plant-box img{
+  display: none;
+}
+.plant-box:hover img{
+  display: block;
+  margin: 0 auto;
+}
+.plant-box:hover p{
+  display: none;
+}
+.plant-box:hover h2{
+  text-align: center;
+}
+
+.plant-box h1, h2, h3, h4, h5, h6{
+  text-align: right;
+}
+.plant-box img{
+  max-width: 100%;
+}
+.italic{
+  font-style: italic;
+}
+.bold{
+  font-weight: bold;
+}

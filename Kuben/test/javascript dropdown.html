@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="icon" type="image/gif" href="#" ></link>
+    <style>
+    body {
+      background-color: rgb(0, 128, 255);
+      position: absolute;
+      left: 5%;
+      right:5%;
+      text-align: center;
+    }
+    </style>
+  </head>
+  <body>
+    <h1></h1>
+      <div id="show-nav" class="dropdown">
+        <div id="dropdown" onClick="myFunction()">Menu Name</div>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#option1">Option 1</a>
+            <a href="#option2">Option 2</a>
+            <a href="#option3">Option 3</a>
+          </div>
+       </div>
+       <script>
+         /* When the user clicks on the button,
+         toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('#dropdown')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+</script>
+</body>
+</html>

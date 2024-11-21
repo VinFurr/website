@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./icons/favicon.ico">
+  </head>
+  <!--
+  Portfolio page: This page is used to show to the world your best works or
+  projects. A portfolio project can be anything you want to, such as a picture,
+  a drawing, a piece of art, a Website, a cover for the lectures, etc. You must
+  include at least 3 different projects. All the projects included in your
+  portfolio must have a title, a description explaining what the project is about
+  (5 or 6 lines) and a image.
+-->
+  <body class="portfolio_text_color portfolio_background">
+    <div class="portfolio_top_background">
+      <ul class="navbar_background">
+        <li class="blue"><a href="index.html">Home</a></li>
+        <li class="orange"><a href="portfolio.html">Portfolio</a></li>
+        <li class="purple"><a href="resume.html">Resume</a></li>
+        <li class="green"><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="top_container">
+        <h1 class="sacramento portfolio_head_color">Portfolio page</h1>
+        <h2 class="portfolio_font_color">A short summary of my greatest works all time!</h2>
+        <img class="sml_img" src="./images/fire.png" alt="fire.png">
+        <img class="lrg_img" src="./images/fire.png" alt="fire.png">
+        <img class="sml_img" src="./images/fire.png" alt="fire.png">
+      </div>
+    </div>
+    <div class="middle_container">
+      <h2 class="portfolio_head_color">Topics:</h2>
+    </div>
+    <div class="bottom_container">
+      <div class="div_middle">
+        <ul>
+          <li><a href="#el">The world is electric</a>
+            <ul><!-- Here you go, a nested list -->
+              <li><a href="#el1">Electrical installation</a></li>
+              <li><a href="#el2">Alarm system</a></li>
+              <!--<li><a href="#el3">Access control</a></li>-->
+            </ul>
+          </li>
+          <li><a href="#food">Delicious food</a>
+
+          </li>
+          <li><a href="#coding">Coding</a>
+
+          </li>
+        </ul>
+      </div>
+      <!--electrical-->
+      <div class="">
+        <h2 class="portfolio_head_color center" id="el">⚡The world is electric⚡</h2>
+        <p class="center">One of my works that i am most proud of was during the high school where i was
+          building electrical installations. It was a lot of fun and i learned a lot about
+          electrical & electronical systems, security systems and more!</p>
+        <!--elenergi-->
+        <div class="video_div_min_height">
+          <video class="skill_video_right"  controls>
+            <source src="./videos/elenergi.mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="portfolio_head_color center" id="el1">Electrical installation</h3>
+          <p>My 1<sup>st</sup> part in this topic is about general electrical installation.
+          During high schol where i studied electro, i have learned a lot of electic installations and systems.
+          My primarily job was to plan, draw and build the system/installation and perform a final check.
+          I was one of the best in my class and the systems i buildt rarely needed troubleshoot as they
+          worked perfectly most of the time. In this video, you will see one of the most complex system i built.
+          The two light bulb in the bottom is supposed to simulate heat cables, the light bulb in the middle is
+          being controlled by two different switches and the the left and right light bulb is controlled by one
+          double switch. The power output in both sides is also being active all the time no matter what position
+          the switches is set to.</p>
+          <figure class="portfolio_fig_l">
+            <img class="portfolio_2nd_img" src="./images/enlinje.jpg" alt="enlinje.jpg">
+            <figcaption>A simple drawing of this installation</figcaption>
+          </figure>
+        </div>
+        <!--innbruddsalarm-->
+        <div class="video_div_min_height">
+          <video class="skill_video_left" controls>
+            <source src="./videos/innbruddsalarm.mov">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="portfolio_head_color center" id="el2">Alarm system</h3>
+          <p>Here is a small security system installation i built on my own.
+          In this system, there are typical components thhat is also used in
+          the real world such as alarm terminal, alarm central, IR detectors and magnetic contacts.
+          Unfortunately, i did not install a the glass break detector because there were no glass
+          to install it on. Connecting the detectors to the alarm central was surprisingly easy
+          and i made sure that the alarm central would detect which sone the problem occured based
+          on the different detectores connected to the different ports.</p>
+        </div>
+        <!--dørsystem--><!--
+        <div class="video_div_min_height">
+          <video class="skill_video_right" controls>
+            <source src="./videos/dorsystem.mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="portfolio_head_color center" id="el3">Access control</h3>
+          <p> Here is a video of me testing the access control system i built. The switches is simulation when a door opens and closes</p>
+        </div>-->
+      </div>
+      <!--cook-->
+      <div class="" id="food">
+        <h2 class="portfolio_head_color center">Delicious food</h2>
+        <div class="food_min_height">
+          <figure class="float_right portfolio_fig_r">
+            <img class="portfolio_img" src="./images/cooking.jpg" alt="cooking.jpg">
+            <figcaption>Cook and fry!</figcaption>
+          </figure>
+          <h3 class="portfolio_head_color center">Im a chef!</h3>
+          <p>Yes, thats true. I have been in a chef school where i learned to cook & fry food.
+          The most important in a kitchen is to keep the equipment clean and never have meat
+          and vegetables in the same cutting board. There are various food that i have made
+          like Sheperd's Pie, Spring Rolls and Crème brûlée just to mention a few examples.
+          Sadly i had to quit after the first year due to unexpected circumstances.</p>
+        </div>
+      </div>
+      <!--coding-->
+      <div class="" id="coding">
+        <h2 class="portfolio_head_color center">Coding</h2>
+        <div class="food_min_height">
+          <figure class="float_left portfolio_fig_l">
+            <img class="portfolio_img" src="./images/portf_code.jpg" alt="code.JPG">
+            <figcaption></figcaption>
+          </figure>
+          <h3 class="portfolio_head_color center">Web development</h3>
+          <p>Since i am a web developer student, i am of course experienced with web development.
+            I actually started to have a little fun with coding before I even started the study.
+            <abbr title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr>
+            has been a big part of my study program, <em>IDG<sub>1292</sub> Web Coding</em>, and i have made several websited in that time.
+            </p><p>Click the button below to visit my earlier website projects</p>
+          <a class="web_code_button" href="http://folk.ntnu.no/hdsun" target="_blank">Click here</a>
+        </div>
+      </div>
+
+    </div>
+      <footer>
+        <div class="section">
+          <a class="inline" href="https://www.facebook.com/VinFurr">Facebook</a>
+          <a class="inline" href="https://twitter.com/VinFurr">Twitter</a>
+          <a class="inline" href="https://www.youtube.com/vinfurrpiano">Youtube</a>
+          <!--<?php
+            print '<p class=footer_text>© '.date(Y).' <a href="http://folk.ntnu.no/hdsun/NTNU/oblig/oblig1/index.php"> Vincent Sun</a></p>'
+          ?>-->
+          <p class=footer_text>© 2020<a href="http://folk.ntnu.no/hdsun/NTNU/oblig/oblig1/index.html"> Vincent Sun</a></p>
+        </div>
+      </footer>
+  </body>
+</html>

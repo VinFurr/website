@@ -1,0 +1,301 @@
+/*Carlos, no, dont look at this. this is a nightmare*/
+/*you have been warned*/
+
+body{
+  margin: auto;
+  font-family: sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/*background for the different pages*/
+.home_top_background {
+  background-image: linear-gradient(#0779e4, #cceeff);
+}
+.home_background{
+  background-color: #cceeff;
+}
+.portfolio_top_background {
+  background-image: linear-gradient(#D86316, #ffe3d1);
+}
+.portfolio_background{
+  background-color:#ffe3d1;
+}
+.resume_top_background{
+  background-image: linear-gradient(#5c2a9d, #ecdeff);
+}
+.resume_background{
+  background-color: #ecdeff;
+}
+.contact_top_background{
+  background-image: linear-gradient(#008000, #d9ffd9);
+}
+.contact_background{
+  background-color: #d9ffd9;
+}
+/**/
+/*navigation bar*/
+.navbar_background {
+  text-align: center;
+  background-color: black;
+  opacity: 0.75;
+  margin: 0;
+  padding: 0;
+}
+ul.navbar_background li {
+  display: inline-block;
+  padding: 15px 0;
+/*  width: 100px;
+  font-size: 1.5rem;*/
+  /*transition-duration: 500ms;*/
+}
+ul.navbar_background li a {
+  padding: 15px;
+  width: 100px;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  /*transition-duration: 500ms;*/
+}
+.blue :hover{
+  background-color: #0779e4;
+}
+.orange :hover{
+  background-color: #D86316;
+}
+.purple :hover{
+  background-color: #5c2a9d;
+}
+.green :hover{
+  background-color: #008000;
+}
+
+/**/
+.top_container
+{
+  width: 60%;
+  margin: 0 auto 0 auto;
+  text-align: center;;
+  min-width: 900px;
+}
+.middle_container{
+  width: 50%;
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+.bottom_container{
+  width: 50%;
+  margin: 0 auto 0 auto;
+}
+footer{
+  background-color: black;
+  color: white;
+  height: 150px;
+  margin: 0 auto 0 auto;
+  opacity: 0.8;
+  width: 100%;
+/*  background-image: linear-gradient(#FFFFFF, #ec0101);*/
+
+}
+.section{
+  width: 50%;
+  margin: 0 auto 0 auto;
+  text-align: center;
+
+}
+.footer_text{
+  padding-top: 10px;
+}
+@font-face {
+  font-family: Sacramento;
+  src: url(./fonts/Sacramento.ttf);
+}
+.sacramento{
+  font-family: Sacramento, sans-serif;
+}
+h1{
+  font-size: 90px;
+  margin: 0;
+  padding-top: 60px;
+}
+h2 {
+  font-size: 30px;
+  margin-top: 0;
+}
+ .home_head_color{
+   color: #004cff;
+ }
+ .home_text_color{
+   color: #0779e4;
+ }
+ .portfolio_head_color{
+   color: #d94600;
+ }
+ .portfolio_text_color{
+   color: #D86316;
+ }
+ .resume_head_color{
+   color: #45046a;
+ }
+ .resume_text_color{
+   color: #5c2a9d;
+ }
+ .contact_head_color{
+   color: #005400;
+ }
+ .contact_text_color{
+   color: #008000;
+ }
+hr{
+  border-top: 7px dotted #a3a3a3;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: none;
+  width: 10%
+}
+.footer_list{
+  display: inline-block;
+}
+.underline{
+  text-decoration: underline;
+}
+/*image size*/
+.sml_img{
+  max-width: 250px;
+  width: 22%;
+}
+.lrg_img{
+  max-width: 350px;
+  width: 31%;
+}
+
+.inline{
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  width: 150px;
+  margin-top: 30px;
+}
+.home_image{
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin: 20px auto 5px auto;
+}
+
+.skill_image_left{
+  max-width: 125px;
+  max-height: 125px;
+  float: left;
+  margin-right: 30px;
+}
+
+.skill_image_right{
+  max-width: 125px;
+  max-height: 125px;
+  float: right;
+  margin-left: 30px;
+}
+.skill_video_left{
+  height: 450px;
+
+  float: left;
+  margin-right: 30px;
+}
+
+.skill_video_right{
+  height: 450px;
+
+  float: right;
+  margin-left: 30px;
+}
+
+.video_div_min_height{
+  min-height: 450px;
+}
+.center{
+  text-align: center;
+}
+.skill_min_height{
+  min-height: 50px;
+}
+p {
+  line-height: 1.7
+}
+.resume_image{
+  width: 20%;
+  float: left;
+}
+table{
+  margin:auto;
+}
+.no_list_type{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+.contact_img{
+  width: 24%;
+  min-width: 100px;
+}
+.map{
+  width: 100%;
+}
+
+.home_code_img{
+  width: 100%;
+
+}
+.card {
+  background-color: white;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  box-shadow: 7px 7px 10px 3px darkgrey;
+  min-height: 150px;
+  margin: 10px 0;
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+}
+
+table{
+  padding: 10px;
+}
+.div_middle{
+  margin: auto;
+  width: 250px;
+}
+
+.portfolio_2nd_img{
+  width: 500px;
+}
+.float_left{
+  float: left;
+  padding: 0;
+}
+.portfolio_fig_l{
+  margin: 0 30px 0 0;
+  padding: 0;
+}
+.portfolio_fig_r{
+  margin: 0 0 0 30px;
+  padding: 0;
+}
+.portfolio_img{
+  height: 300px;;
+}
+.food_min_height{
+  min-height: 322px;
+}
+.float_right{
+  float: right;
+  padding: 0;
+}
+.web_code_button{
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  background-color: #D86316;
+}

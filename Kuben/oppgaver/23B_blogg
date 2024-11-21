@@ -1,0 +1,37 @@
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+$innlegg = $_POST['innlegg_fil'];
+
+$eksempel = fopen("./testfil.txt", "a") or die("Kan ikke opne filen!");
+$tekst = $innlegg;
+$tekst .= "\r\n";
+fwrite($eksempel, $tekst);
+fclose($eksempel);
+
+print "<h1>Takk for ditt innlegg.</h1>";
+print "Du skrev: " . $innlegg . ".<p>" ;
+print "Nå kan du skrive ett nytt innlegg her; <p><hr> ";
+}
+
+print '
+
+<html>
+<head>
+</head>
+<body>
+
+<form name="innlegg" action="" method="POST">
+Skriv her ditt innlegg: <p>
+<textarea rows="4" cols="50" name="innlegg_fil">
+</textarea>
+<p>
+<input type="submit" name="submit" value ="submit form">
+</form>
+
+</body>
+</html>
+';
+
+?> 

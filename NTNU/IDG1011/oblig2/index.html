@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      body{
+        margin: 5%;
+      }
+      .space{
+        width: 30px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <p><b>oblig2 task 1 and 2</b></p>
+    <input type = "number" id = "age" placeholder = "Your Age">
+    <!--type changed from text to number and value is changed to placeholder-->
+    <button name="button" value="" onclick="display(document.getElementById('age').value)">send</button>
+    <h1 id="outputTask1">h1Task1, waiting for the submit...</h1>
+    <!--Task 2 exclusive-->
+    <h1 id="outputTask2">h1Task2, waiting for the submit...</h1>
+    <br><br>
+    <p><b>task 3</b></p>
+    <code>
+      var i = 10;
+      <br>for (var i = 0; i < 3; i++) {
+      <br><span class="space"></span>if(i==2){let i=5;}
+      <br>}
+      <br>alert(i);
+    </code>
+    <p>the output will be the value 3 after testing it in the console.</p>
+    <!--not sure how this task was supposed to work? it only asks what the output will be-->
+    <!--the student assistant approved this-->
+    <br><br>
+    <p><b>task 4</b></p>
+    <form name = "myForm" >
+      <input type = "text"   id = "fName" name ="FirstName"  placeholder="First name">
+      <input type = "text"   id = "LName" name = "LastName"  placeholder="Last name">
+      <input type = "number" id = "ageTask4"   name = "Enter age" placeholder="Ages">
+      <input type = "number" id = "num"   name = "mobile"    placeholder="Phone number 7 digits">
+      <!--gave the form placeholders and value is changed to name at "Enter age", gave submit onclick="validateForm()"-->
+      <input type = "submit" onclick="validateForm()">
+    </form>
+    <br>
+    <br>
+    <br>
+    task 5:
+    <a href="./calc.html">calc.html</a>
+
+
+
+    <script type="text/javascript">
+      function display(age){
+        //Task 1
+        document.getElementById('outputTask1').innerHTML=age;
+        //document.getElementByTagName('output').innerHTML=age; did not work
+        //End of task 1
+        //Task 2
+        var x = 3;
+        var y = 2;
+        if (document.getElementById('age').value < 25) {
+          var ageUnder25 = document.getElementById('age').value * x
+          document.getElementById('outputTask2').innerHTML=ageUnder25;
+        }
+        if (document.getElementById('age').value >= 25) {
+          var ageOver25 = document.getElementById('age').value / y
+          document.getElementById('outputTask2').innerHTML=ageOver25;
+        }
+      }
+
+      //task 4
+      function validateForm(){
+        if (document.getElementById('fName').value == '') {
+            alert("First name is missing");
+        }
+        if (document.getElementById('LName').value == '') {
+            alert("Last name is missing");
+        }
+        /*
+        if ((document.getElementById('ageTask4').valueAsNumber < 13)  || (document.getElementById('ageTask4').valueAsNumber > 85)) {
+            alert("Sorry, the age shall not be lower than 13 or greater than 85");
+        }*/
+
+        if (document.getElementById('ageTask4').valueAsNumber < 13) {
+            alert("Sorry, the age shall not be lower than 13");
+        }
+        else if  (document.getElementById('ageTask4').valueAsNumber > 85) {
+            alert("Sorry, the age shall not be greater than 85");
+        }
+        if (document.getElementById('num').value.length !== 7) {
+            alert("expected the number to have 7 digits. You typed " + document.getElementById('num').value.length + " digits");
+        }
+
+      }
+    </script>
+  </body>
+</html>

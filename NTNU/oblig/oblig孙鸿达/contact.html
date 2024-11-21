@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--SEO-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="UN Sustainable Development Goals | Zero hunger | NTNU |
+    Concact Us. send us a message about anything. We would like to hear. Do you have any suggestions or feedback for further improvement?">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zero Hunger - Contact</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/master.css">
+    <!--Other-->
+    <link rel="icon" href="images/favicon/hunger-icon.png">
+  </head>
+  <body>
+    <header class="header_background">
+      <!--Navbar-->
+      <nav>
+        <ul>
+          <li class="nav-img">
+            <!--image in a navbar is such a pain... -->
+            <a href="https://sdgs.un.org/goals/goal2" target="_blank">
+              <!--image in a navbar is such a pain... -->
+              <img class="nav-img" src="images/2-zero-hunger.png" alt="Zero Hunger logo">
+              <!--image in a navbar is such a pain... -->
+            </a>
+          </li>
+          <li class="nav-button"><a href="index.html">Home</a></li>
+          <li class="nav-button"><a href="contact.html">Contact</a></li>
+          <li class="nav-button"><a href="game.html">Game</a></li>
+        </ul>
+      </nav>
+      <!--End of navbar-->
+      <div class="header_content">
+        <div class="content_box">
+          <div class="content_padding">
+            <h1>Contact us</h1>
+            <!--This wont work in real. Need php because the server need to process the information-->
+            <form class="" action="submitted.html" method="post">
+              <span class="br br-margin"></span><!--Not allowed to use <br> tag...or should not use it...-->
+              <label>
+                Full name*:
+                <span class="br"></span>
+                <input type="text" name="felt1" value="" placeholder="Type your full name here" required>
+                <span class="br"></span>
+              </label><span class="br br-margin"></span><label>
+                Email addresss:
+                <span class="br"></span>
+                <input type="email" name="felt2" value="" placeholder="Your e-mail address">
+                <span class="br"></span>
+              </label><span class="br br-margin"></span><label>
+              Subject*:
+              <span class="br"></span>
+              <select class="" required>
+                <option value="">Choose one option</option>
+                <option value="feedback">Feedback</option>
+                <option value="question">Question</option>
+                <option value="shareExperience">Share experience</option>
+                <option value="other">Other</option>
+              </select><span class="br br-margin"></span>
+              </label><label>
+                Message*:<span class="br"></span>
+                <textarea name="felt4" rows="4" cols="50" placeholder="Your message here" required></textarea>
+                <span class="br br-margin"></span>
+              </label>
+              <input class="button" type="submit" value="Send message">
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <footer>
+      <div class="footer_content">
+        <!--<img src="images/ntnu_logowtext.png" alt="">-->
+        <a href="https://www.ntnu.edu/" target="_blank">
+          <img class="footer-logo" src="images/logo_ntnu_tag_english.svg" alt="NTNU - Norwegian Universityy of Science and Technology">
+        </a>
+        <div class="footer_content"><!--make sure the map is 100% wide when screen is less than 600px-->
+          <p class="footer_txt"><em>Address: Raufossvegen 40, 2821 Gjøvik <br> Phone number:
+            <a href="tel:004761135400">+0047 61 13 54 00</a>
+          </em></p>
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe class="gmap_canvas" src="https://maps.google.com/maps?q=Raufossvegen%2040&t=&z=13&ie=UTF8&iwloc=&output=embed">
+              </iframe><a href="https://embedgooglemap.net/mapv2/">Google maps</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="footer_txt"><span class="italic">This page was created as part of the
+            <a href="https://www.ntnu.edu/studies/courses/IDG1292#tab=omEmnet" target="_blank">subject IDG1292</a>
+            of the department of design by H. D. Vincent Sun, student from
+            <a href="https://www.ntnu.edu/studies/aarweb" target="_blank">ÅRWEB</a></span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

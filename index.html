@@ -1,49 +1,154 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>Please Wait...</title>
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-      <meta http-equiv="Refresh" content="5; url=./html/index.html">
-      <script type="text/javascript">
-        function RandomImages() {
-          var MyImages = new Array();
-          MyImages[0] = "./pictures/arts/phoenix_laura.jpg";
-          MyImages[1] = "./pictures/arts/Maevetigerdoll.jpg";
-          MyImages[2] = "./pictures/arts/morning_flora.jpg";
-          MyImages[3] = "./pictures/arts/morning_kat.jpg";
-          MyImages[4] = "./pictures/arts/morning_raine.jpg";
-          MyImages[5] = "./pictures/arts/norwegian_forest_cat.jpg";
-          MyImages[6] = "./pictures/arts/morning_laura.jpg";
-          MyImages[7] = "./pictures/arts/long_hair_kat.jpg";
-          MyImages[8] = "./pictures/arts/gamerlaura.jpg";
+    <title>Choose one or...</title>
+    <!--<meta http-equiv="Refresh" content="30; url=./10sec_out.html">-->
+    <style>
+      body{
+        margin: inherit;
+        text-align: center;
+        padding: inherit;
+        background-color: #765ff5;
+      }
+      button{
+        height: 33px;
+        width: 200px;
+        //background-color:#0779e4;
+      }
 
-          var MyLinks = new Array();
-          MyLinks[0] = "https://www.deviantart.com/twokinds/art/Phoenix-Laura-829195844";
-          MyLinks[1] = "https://www.deviantart.com/twokinds/art/Maeve-s-Tiger-Doll-656820533";
-          MyLinks[2] = "https://www.deviantart.com/twokinds/art/Good-Morning-Flora-Redux-825848662";
-          MyLinks[3] = "https://www.deviantart.com/twokinds/art/Good-Morning-Kathrin-832629095";
-          MyLinks[4] = "https://www.patreon.com/posts/good-morning-35440380";
-          MyLinks[5] = "https://www.deviantart.com/twokinds/art/Norwegian-Forest-Cat-822329839";
-          MyLinks[6] = "https://www.patreon.com/posts/good-morning-35474956";
-          MyLinks[7] = "https://www.deviantart.com/twokinds/art/Long-Haired-Kat-822221386";
-          MyLinks[8] = "https://www.deviantart.com/twokinds/art/Gamer-Laura-844290657"
+      h1{
+        padding-top: 10%;
+        margin-top: inherit;
+        font-family: Sacramento, sans-serif;
+        font-size: 5em;
+        color: #004cff;
+      }
+      h2{
+        font-family:  sans-serif;
+        color: #765ff5;
 
-          var rnd = Math.floor(Math.random() * MyImages.length);
+      }
+      table{
+        margin: auto;
+      }
+      td{
+        padding: 5px 15px 5px 15px;
+        width: 15%;
+      }
+      .div1{
 
-          document.write('<a href="'+MyLinks[rnd]+'" target="_blank"><img src="'+MyImages[rnd]+'" width="50%" height="30%"></a>');
-        }
+        padding: 0 20% 0 20%;
+        background-image: linear-gradient(#0779e4, #cceeff);
+      }
+      .div2{
+        background-color: #cceeff;
+        padding: 30px 20% ;
+        margin: auto;
+      }
+      .div2-1{
+        border: 10px 0;
+        padding: 10px 0;
+      }
+      .div2-2{
+        width: 49%;
+        display: inline-block;
+        margin: none;
+        padding: none;
+        border: none;
+      }
+      .div3{
+        background-image: linear-gradient(#cceeff, #765ff5);
+        padding: 0 20% 0 20%;
+        margin: inherit;
+      }
 
-      </script>
+      /*font*/
+          @font-face {
+            font-family: Sacramento;
+            src: url(./NTNU/font/Sacramento.ttf);
+          }
+    </style>
+  <body>
+    <!--
+     __    __   ________   __          __           _________
+    /_/|  /_/| /_______/| /_/|        /_/|         /________  \
+    | ||  | || |  _____|/ | ||        | ||        /  ______  \ |
+    | ||__| || | ||___    | ||        | ||        | //     \  ||
+    | |/__| || | |/__/|   | ||        | ||        | ||      | ||
+    |  ___  || |  ___|/   | ||        | ||        | ||      | ||
+    | ||  | || | ||_____  | ||______  | ||______  | | \_____/ ||
+    | ||  | || | |/____/| | |/_____/| | |/_____/|  \ \_____/ //
+    |_|/  |_|/ |_______|/ |________|/ |________|/   \_______//
+    -->
 
-   </head>
-   <body><center>
-      <h3>Please wait while redirecting...</h3>
-      <h4>Have a look on this beutiful art while waiting</h4>
-      <script type="text/javascript">
-        RandomImages();
-      </script>
-      <!--<a href="https://www.deviantart.com/twokinds/art/Maeve-s-Tiger-Doll-656820533" target="_blank">
-        <img src="./pictures/Maevetigerdoll.jpg" width="40%" height="40%" alt="">
-      </a>-->
-   </center></body>
+    <div class="div1">
+      <!--<script type="text/javascript">
+      var timeleft = 29;
+      var downloadTimer = setInterval(function(){
+      if(timeleft <= 0){
+        clearInterval(downloadTimer);
+        document.getElementById("countdown").innerHTML = "redirecting...";
+      } else {
+        document.getElementById("countdown").innerHTML = "You got " + timeleft + " seconds to choose before...";
+      }
+      timeleft -= 1;
+      }, 1000);
+
+    </script>--><!--
+      <h1 id="countdown">You got 30 seconds to choose before...</h1>-->
+      <h1 class="sacramento">Hi, im Vincent</h1>
+
+      <br>
+    </div>
+    <div class="div2">
+      <div class="div2-1">
+        <h2>NTNU Website</h2>
+        <div class="div2-2">
+          The website i have made here at NTNU
+        </div>
+        <div class="div2-2">
+          <a href="./NTNU/index.php"><button type="button" name="button">NTNU WEBSITE</button></a>
+        </div>
+      </div>
+      <div class="div2-1">
+        <h2>Kuben vgs. website</h2></h2>
+        <div class="div2-2">
+          The website i made in high school. Note: Some functions might be faulty due to different password and account to databases in different domains. <br>It is also very buggy... sorry about that
+        </div>
+        <div class="div2-2">
+          <a href="./Kuben/index.php"><button type="button" name="button">Kuben Vgs. website</button></a>
+        </div>
+      </div>
+      <div class="div2-1">
+        <h2>Personal Website with online course</h2>
+        <div class="div2-2">
+          My personal website with help from an <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">online course</a>
+        </div>
+        <div class="div2-2">
+          <a href="./Personal_udemy/index.html"><button type="button" name="button">Personal website with online course</button></a>
+        </div>
+      </div>
+      <div class="div2-1">
+        <h2>Personal Website</h2>
+        <div class="div2-2">
+          My personal website before i took the online course
+        </div>
+        <div class="div2-2">
+          <a href="./Personal/index.html"><button type="button" name="button">Personal Website</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="div3">
+      <br><br>
+      <a class="" href="https://www.facebook.com/vinfurr">Facebook</a>
+      <a class="" href="https://twitter.com/vinfurr">Twitter</a>
+      <a class="" href="https://twitter.com/vinfurrgamer">Twitter</a>
+      <a class="" href="https://www.youtube.com/vinfurrpiano">YouTube</a>
+      <a class="" href="https://www.twitch.tv/vinfurr">Twitch</a>
+      <a class="" href="https://vinfurr.github.io/website">Website</a>
+      <a class="" href="https://www.finn.no/user/profile/profile.html?id=990448736">Finn</a>
+      <p>© 2022 Vincent Sun.</p>
+      <br>  <br>
+    </div>
+  </body>
 </html>

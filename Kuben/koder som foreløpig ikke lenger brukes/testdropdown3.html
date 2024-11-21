@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      body{
+        margin: auto;
+      }
+      #nav{
+      	position: relative;
+      	margin: auto;
+    	}
+      ul{
+        list-style-type: none;
+        overflow: hidden;
+    		margin: 0;
+        padding: 0;
+        background-color: #228b22; /*grønn*/
+    	}
+    	ul li{
+        float: left;
+    		position: relative;
+    	}
+    	ul li a{
+    		border-right: 0px solid #fff;
+    		padding: 10px 25px;
+    		color: #fff;
+    		text-shadow: 1px 1px 0 #222;
+    		text-decoration: none;
+    		display: block;
+	    }
+    	ul li:hover>a{
+    		background: linear-gradient(#006400,#228b22); /*grønn*/
+    		color: #fff;
+    		opacity: 0.9;
+    	}
+    	ul li:hover>ul{
+    		visibility: visible;
+    	}
+    	ul ul,ul ul li ul{
+    		list-style: none;
+    		margin: 0;
+    		padding: 0;
+    		visibility: hidden;
+    		position: absolute;
+    		width: 180px;
+    	}
+    	ul ul{
+    		top: 38px;
+    		left: 0;
+    	}
+    	ul ul li ul{
+    		top: 0;
+    		left: 240px;
+    	}
+    	ul ul li a{
+    		background: linear-gradient(#0065b2,#1685da); /*blå*/
+    		padding: 7px 15px;
+    		text-shadow: 0 1px 1px #111;
+    		text-decoration: none;
+    		display: inline-block;
+    		float: left;
+    		width: 210px;
+    	}
+    	ul ul ul li a{
+    		background: linear-gradient(#b22222,#8b0000); /*rød*/
+    	}
+    </style>
+  </head>
+  <body>
+    <nav id="nav">
+    		<ul>
+    			<li><a href="#">Hjem</a></li>
+    			<li><a href="#">Musikkliste</a></li>
+    			<li><a href="oppgaver.html" class="dropbtn">Oppgaver &#x25BC;</a>
+    				<ul>
+    					<li><a href="" target="">Oppgave 1-5A</a>
+                <ul>
+                  <li><a  href="./oppgaver/01E_pseudokode.html"               target=""> 01E Pseudokode</a></li>
+                  <li><a  href="./oppgaver/02AB_nyhetskoisken.html"           target=""> 02AB Nyhetskiosken</a></li>
+                  <li><a  href="./oppgaver/03A_lydfiler.html"                 target=""> 03A Lydfiler</a></li>
+                  <li><a  href="./oppgaver/03B_pizzabestilling.html"          target=""> 03B Pizzabestilling</a></li>
+                  <li><a  href="./oppgaver/04A_valgfri_emne.html"             target=""> 04A Valgfri emne</a></li>
+                  <li><a  href="./oppgaver/04B_kart_og_byer.html"             target=""> 04B kart og byer</a></li>
+                  <li><a  href="./oppgaver/05A_valgfri_emne_med_iframe.html"  target=""> 05A Valgfri emne med iframe</a></li>
+                </ul></li>
+    					<li><a href="" target="">Oppgave 6A-11B</a>
+                <ul>
+                  <li><a  href="./oppgaver/06A_forbedring_av_prove_19_09_2018.html"   target=""> 06A Forbedring av prøve 19 09 2018</a></li>
+                  <li><a  href="./oppgaver/07_internet.html"                          target=""> 07 Internet</a></li>
+                  <li><a  href="./oppgaver/08_digital_samtid.html"                    target=""> 08 Digital samtid</a></li>
+                  <li><a  href="./oppgaver/10_forbedring_av_prove_31_10_2018.html"    target=""> 10 Forbedring av prøve 31 10 2018</a></li>
+                  <li><a  href="./oppgaver/10B_dansende_hjerter.html"                 target=""> </a></li>
+                  <li><a  href="./oppgaver/11A_strektegning_fargelegging.html"        target=""> </a></li>
+                  <li><a  href="./oppgaver/11B_bamseansikt"                           target=""> </a></li>
+                </ul></li>
+    					<li><a href="" target="">Oppgave 11C-15</a>
+                <ul>
+                  <li><a  href="./oppgaver/11C_roterende_propell.html"       target=""> </a></li>
+                  <li><a  href="./oppgaver/11D_sammensatt_bilde.html"        target=""> </a></li>
+                  <li><a  href="./oppgaver/11E_utklippsoving.html"           target=""> </a></li>
+                  <li><a  href="./oppgaver/12AB_hytte.html"                  target=""> </a></li>
+                  <li><a  href="./oppgaver/13AB_flyselskap.html"             target=""> </a></li>
+                  <li><a  href="./oppgaver/14_flyselskap.html"               target=""> </a></li>
+                  <li><a  href="./oppgaver/15_datamaskinens_oppbygging.html" target=""> </a></li>
+                </ul></li>
+    					<li><a href="" target="">Oppgave 16A-19ABCD</a>
+                <ul>
+                  <li><a  href="./oppgaver/16A_videoredigering.html"          target=""> </a></li>
+                  <li><a  href="./oppgaver/17A_julefilm.html"                 target=""> </a></li>
+                  <li><a  href="./oppgaver/17B_juleside.html"                 target=""> </a></li>
+                  <li><a  href="./oppgaver/18A_oppsummering.html"             target=""> </a></li>
+                  <li><a  href="./oppgaver/18B_+-_digitalisert_hverdag.html"  target=""> </a></li>
+                  <li><a  href="./oppgaver/19ABCD_nettside_i_php.php"         target=""> </a></li>
+                  <li><a  href="./oppgaver/"  target=""> </a></li>
+                </ul></li>
+    				</ul></li>
+          <li><a href="" target="">Diverse</a>
+            <ul>
+              <li><a  href="./oppgaver/soylediagram.html"  target=""> Søylediagram</a></li>
+              <li><a  href="./oppgaver/../splatoon.html"  target=""> Egen skriftype</a></li>
+              <li><a  href="./oppgaver/tabell.html"  target=""> Tabell</a></li>
+              <li><a  href="./oppgaver/"  target=""> </a></li>
+              <li><a  href="./oppgaver/"  target=""> </a></li>
+              <li><a  href="./oppgaver/"  target=""> </a></li>
+              <li><a  href="./oppgaver/"  target=""> </a></li>
+            </ul>
+    			<li><a href="#">Prøver</a></li>
+    			<li><a href="#">Om meg</a></li>
+    			<li><a href="#">Spill</a></li>
+    		</ul>
+    	</nav>
+  </body>
+</html>

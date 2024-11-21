@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="icon" href="./../pictures/icons/question.jpg">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>My games</title>
+
+    <script type="text/javascript">
+      function RandomImages() {
+        var GameImages = new Array();
+        GameImages[0] = "./../pictures/arts/gamerlaura.jpg";
+
+
+
+        var rnd = Math.floor(Math.random() * GameImages.length);
+
+        document.write('<style>body {background-image: url("'+GameImages[rnd]+'");}</style>');
+      }
+
+    </script>
+    <!--<style media="screen">
+      body {
+        background-image: url("")-->
+        <script type="text/javascript">
+          RandomImages();
+        </script>
+      <style media="screen">
+        body{
+          background-position: center;
+          background-size: cover;
+
+        }
+    </style>
+  </head>
+  <body>
+
+    </style>
+    <ul class="nav">
+      <li><a href="index.html">Home</a>
+      <!--
+        <ul>
+          <li><a>1.1</a></li>
+          <li><a>1.2</a></li>
+          <li><a>1.3</a></li>
+        </ul>-->
+      </li>
+      <li><a href="music.html">Musiclist</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a> Other &#x25BC; </a>
+        <ul>
+          <li><a href="./miiverse/index.html" target="_blank">Miiverse</a></li>
+          <li><a href="./webcomics.html">Great webcomics!</a></li>
+          <li><a href="./game.html">My Games</a></li>
+        </ul>
+      </li>
+    </ul>
+
+  </body>
+</html>

@@ -1,0 +1,235 @@
+/* Easter egg:
+ __    __   ________   __          __           _________
+/_/|  /_/| /_______/| /_/|        /_/|         /________  \
+| ||  | || |  _____|/ | ||        | ||        /  ______  \ |
+| ||__| || | ||___    | ||        | ||        | //     \  ||
+| |/__| || | |/__/|   | ||        | ||        | ||      | ||
+|  ___  || |  ___|/   | ||        | ||        | ||      | ||
+| ||  | || | ||_____  | ||______  | ||______  | | \_____/ ||
+| ||  | || | |/____/| | |/_____/| | |/_____/|  \ \_____/ //
+|_|/  |_|/ |_______|/ |________|/ |________|/   \_______//
+*/
+/*i started with this at first, but it made the fonts much bigger than if i used body{}
+*{
+  font-family: Sansita Swashed, sans-serif;
+  font-size: 1.5rem;
+}*/
+/*
+Well, it was never specified how many external css files that could be linked to the html code,
+but here is the second way to link an external css code in case i wat not supposed to have the
+google css linked to the html file in line 12
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap");*/
+
+body{
+  font-family: Sansita Swashed, sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+}
+@font-face {
+font-family: Lemonada Caps;
+src: url("../assets/fonts/Piedra-Regular.ttf");
+}
+
+header{
+  background-image: url("../assets/img/ocean-reef.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  position: relative;
+}
+header div{
+  background-color: lightblue;
+  border-radius: 100%;
+  min-height: 3em;
+  opacity: 0.7;
+  width:20em;
+  /*Looked up on center both horizontally and vertically at
+  https://www.w3schools.com/howto/howto_css_center-vertical.asp
+  I am not supposed to remember everything so i guess this is allowed*/
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  /*added webkit, moz and o because CSSLint add-on for Atom suggested it*/
+  /*I am pretty sure there is other places that i could have used ms, webit, moz and o too, but i dont bother to do it..*/
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/*tried this so many times before i used the sulotion at "header div"...
+the h1 just woudnt center vertically inside the box...*/
+/*
+header div h1{
+  font-family: Lemonada Caps, sans-serif;
+  font-size: 2em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 	50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+*/
+h1{
+  text-align: center;
+  font-family: Lemonada Caps;
+}
+
+/*could have specified "div.main-box article h2", but since all h2 is
+already in the "main-box", it should be enough with "h2" only*/
+#newsletter-introduction h2{
+  word-spacing: 0.1em;
+  text-transform: capitalize;
+  font-family: Lemonada Caps;
+}
+
+
+.main-box{
+  transform: translateY(-15vh);
+  margin: 0 15%;
+  background-image: linear-gradient(#d9f2ff, #8ec7d1);
+  border-radius: 10px;
+  /*the order for the shadow is h-offset (3px), v-offset (3px), blur (10px), spread (10px) and color (#1d1d1d) right?*/
+  box-shadow: 3px 3px 10px 10px #1d1d1d;
+}
+article{
+  padding: 5%;
+}
+/*only the first article section will have the text centered*/
+#newsletter-introduction {
+  text-align: center;
+  /*seems like the marigin on top is pushing the main box down while
+  -15vh at .main-box is pushing it up... so i set the marigin top to 0
+  update: went trough the code again and it does not affect it anymore...
+  probably to other changes in the css code...*/
+  /*margin-top: 0;*/
+}
+/*pushing the first h2 down. marigin:5%; or top:5%; didnt work...*/
+/*I didnt realize that i could have used padding 5% in article... instead of marigin...
+#newsletter-introduction:first-child{
+  padding: 5%;
+}*/
+/*main content syling*/
+article div{
+  display: flex;
+  justify-content: space-between;
+
+}
+.text-article{
+  width: 45%;
+
+}
+.text-article p{/*
+  margin-top: auto;
+  margin-right: 0;
+  margin-bottom: auto;
+  margin-left: 0;
+  margin: auto 0 auto 0;
+  you saw this in teams... i was bored...
+  */
+  margin: auto 0;
+  text-align: justify;
+}
+/*looked up on w3schools, MDN and stackoverflow again */
+.text-article p::first-letter {
+  font-size: 2em;
+  font-weight: bold;
+}
+.text-article p::first-line {
+  color: #3178b3;
+  text-indent: 1.5em;
+}
+/* image width 45%, but since the img is inside a figure...*/
+figure{
+  width: 45%;
+  margin: 0;
+}
+img{
+  width: 100%
+}
+
+/*lists...*/
+ul li {
+  list-style-type: none;
+  font-family: Courier New;
+  /*it works with Courier only, but i wrote "Courier New"
+  because that is what the task/oblig wanted me to do*/
+}
+ul {
+  padding:0
+}
+/*so the font size on the fish is supposed to be 0.8 rem and not the list content...*/
+/*this code was copied from stackoverflow with huge modifications, fish on both sides of the list!*/
+li:before {/*"li:before,:after" did obviously not work as intended*/
+  content: "\1F41F";
+  font-size: 0.8rem;
+}
+li:after {
+  content: "\1F41F";
+  font-size: 0.8rem;
+}
+
+/*well, the selector speaks for itself...*/
+footer p{
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+hr {
+  margin: auto 5%;
+}
+/*changes to be made if the screen width is between 600 and 960px*/
+@media screen and (max-width: 960px) {
+  header{
+    height: 40vh;
+  }
+  header div{
+    width: 70vw;
+  }
+  .main-box{
+    transform: translateY(-10vh);
+    margin: 0 5%;
+  }
+}
+
+/*changes to be made if the screen width is under 600px*/
+@media screen and (max-width: 600px) {
+  body{
+    font-size: 1.2rem;
+  }
+  header{
+    height: 30vh;
+  }
+  header div{
+    width: 90vw;
+    min-height: 1.5em;
+  }
+  .main-box{
+    transform: translateY(-1vh);
+    margin: 0 1%;
+    border-radius: 1em;
+    box-shadow: none;
+  }
+  article div{
+    display: flex;
+    flex-direction: column;
+
+  }
+  /*used flexbox froggy as hint for order of course...*/
+  .text-article{
+    width: 100%;
+    order: 1;
+
+  }
+  figure{
+    width: 100%;
+    margin: 0;
+    order:2;
+    margin-top: 1em;
+  }
+}

@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <style media="screen">
+    </style>
+  </head>
+  <body>
+    <br>
+    <h2>send et melding!</h2>
+    <form method="POST" action="./28B_database-melding_sendt.php" name="database_sitat">
+      <table>
+        <tr>
+          <td>Sitatet</td>
+          <td><input type = "text" name="sitat" size"40" value=""></td>
+        </tr><tr>
+          <td>Opprinnelse</td>
+          <td><input type = "text" name="opprinnelse" size"40" value=""></td>
+        </tr><tr>
+          <td>Referanse</td>
+          <td><input type = "text" name="referanse" size"40" value=""></td>
+        </tr><tr>
+          <td><input type = "submit" value="Opprett sitat" name="send_sitat"></td>
+          <td><input type = "reset" value="Fjern info i skjema" name="fjern_skjemainfo"></td>
+        </tr>
+      </table>
+    </form><br>
+    <a href="./28B_database-vis_meldinger.php"><button>se meldinger fra besøkende</button></a>
+  </body>
+</html>

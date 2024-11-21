@@ -1,0 +1,4 @@
+del 1 lage tabell fullført.
+problemer med tabell kunderegistrering, viste seg at det var to kolonner som hadde samme navn og det var derfor den feilet
+
+del 2 gjenstår

@@ -1,0 +1,222 @@
+body{
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/*Navbar*/
+  nav ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #D09E37;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav ul li{
+    list-style: none;
+    display:inline-block;
+  }
+  nav ul li.nav-button:hover{
+    background-color: #bf8000;
+  }
+  nav ul li.nav-button a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    line-height: 55px;
+    padding: 15px;
+  }
+  .nav-img{
+    height: 55px;
+  }
+/*End of Navbatr*/
+/*header*/
+  .header_background{
+    background: #fff url("../images/poor-child.jpg") no-repeat fixed right;/*
+    background-image: url("../images/poor-child.jpg");/*shorthand for background image didnt work*/
+    /*background-attachment: fixed;
+    /*
+    background-repeat: no-repeat;
+    background-position: right;*/
+    background-size: cover;
+    min-height: 40em;
+    left: 30%;
+    right: 30%;
+  }
+  .header_content{
+    width: 75%;
+    margin: 100px auto 0 auto;
+    min-width: 600px;
+  }
+  .header_box_position{
+    margin-right: 50%;
+    margin-top: 100px;
+  }
+  header h1{
+    margin: 0;
+  }
+/*end of header*/
+/*middle content stuff*/
+  .middle_box_position{
+    margin: 100px auto 0;
+  }
+  /* This wont work properly for some reason and i cant find out why
+  .bottom_box_position{
+    margin-left:50%;
+    margin-top: 100px;
+  }*/
+  .content_padding{
+    padding: 20px;
+  }
+  .background_style{
+    background: rgba(255,255,255,0) url("") no-repeat fixed center;/*
+    background-image: url("../images/poor-child.jpg");/*shorthand for background image didnt work*/
+    /*background-attachment: fixed;
+    /*
+    background-repeat: no-repeat;
+    background-position: right;*/
+    background-size: cover;
+    height: 40em;
+    left: 30%;
+    right: 30%;
+    padding: 50px 0;
+  }
+  /*IMPORTANT:
+  .middle_background and .bottom_background MUST be AFTER
+  .background_style in order to use the background images*/
+  .middle_background{
+    background: #fff url("../images/dried-land.jpg") no-repeat fixed center;
+  }
+  .bottom_background{
+    background: #fff url("../images/still-hope.jpg") no-repeat fixed center;
+  }
+  .content_box{
+    width: 50%;
+    min-width: 600px;
+    background: rgba(255, 255, 255, 0.8);
+    /*background: rgba(208, 158, 55, 0.7);*/
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.75);
+    border-radius: 10px;
+  }
+/*end of middle content stuff*/
+/*Other*/
+  .italic{
+    font-style: italic;
+  }
+  .br{
+    display: block;
+  }
+  .br-margin{
+    margin-top: 10px;
+  }
+  .button{
+    padding: 10px 20px;
+  }
+  p{
+    font-size: 18px;
+  }
+/*end of other*/
+/*footer*/
+  footer{
+    background-color: #404040;
+  }
+  .footer_content{
+    width: 80%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    align-items:  center;;
+    padding: 20px 0;
+    flex-direction: column;
+  }
+  .footer-logo{
+    width:60%;
+    min-width: 540px;
+    margin: 40px 0;
+  }
+  .footer_txt{
+    text-align: center;
+    color: white;
+  }
+  /*footer google maps*/
+    .mapouter{
+      position:relative;
+      text-align:right;
+      height:300px;
+      width:60%;
+      min-width: 600px;
+      margin-bottom: 50px;
+    }
+    .gmap_canvas{
+      overflow:hidden;
+      background:none!important;
+      height:300px;
+      width:100%;
+      border: 0;
+    }
+/*end of footer*/
+
+@media screen and (max-width:600px){
+  /*navbar*/
+    nav ul li.nav-button a{
+      line-height: 70px;
+      padding: 22px 10px;
+    }
+    .nav-img{
+      height: 70px;
+    }
+    .header_background{
+      /*Just wanted to center the child's face in the middle...
+       starring into peoples souls to create a stronger feeling*/
+      background-image: url("../images/poor-child-phone.jpg");
+      background-position: top;
+      background-size: cover;
+    }
+    .header_content{
+      width: 100%;
+      min-width: inherit;
+      margin: 50px auto 0 auto;
+
+    }
+    .header_box{
+      width: 100%;
+      min-width: inherit;
+      margin: 0;
+      border-radius: 0;
+    }
+    .middle_content{
+      width: 100%;
+      min-width: inherit;
+      padding: 10px 0
+    }
+    .content_box{
+      width: 100%;
+      min-width: inherit;
+      margin:0;
+      border-radius: 0;
+
+    }
+    .background_style{
+      height: inherit;
+    }
+  /*footer*/
+    .footer_content{
+      width: 100%;
+
+    }
+    .footer-logo{
+      width:90%;
+      min-width: inherit;
+    }
+    /*footer google maps*/
+      .mapouter{
+        height:300px;
+        width:100%;
+        min-width: inherit;
+      }
+      .gmap_canvas{
+        height:300px;
+        width:100%;
+      }
+  /*end of footer*/
+}
